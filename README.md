@@ -17,7 +17,7 @@ let scene = new THREE.Scene()
 
 let mtlLoader = new MTLLoader();
 
-let objLoader = new THREE.OBJLoader();
+let objLoader = new OBJLoader();
 
 mtlLoader.load('./test.mtl', (materials) => {
   materials.preload()

@@ -1,4 +1,4 @@
-## three-3dsloader
+## three-obj-mtl-loader
 
 [THREE.OBJLoader](https://threejs.org/examples/js/loaders/OBJLoader.js) repackaged as a node module
 

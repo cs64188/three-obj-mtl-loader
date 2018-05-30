@@ -10,9 +10,6 @@
 
 ```js
 
-var THREE = require('three');
-var OBJLoader = require('three-obj-mtl-loader');
-
 import * as THREE from 'three'
 import {MTLLoader, OBJLoader} from 'three-obj-mtl-loader'
 

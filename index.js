@@ -466,6 +466,13 @@ THREE.MTLLoader.MaterialCreator.prototype = {
 					}
 
 					break;
+				
+				case 'alpha':
+					n = parseFloat( value );
+
+					params.alphaTest  = n;
+					
+					break;
 
 				case 'tr':
 					n = parseFloat( value );

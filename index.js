@@ -975,7 +975,7 @@ THREE.OBJLoader = ( function () {
 
 		parse: function ( text ) {
 
-			console.time( 'OBJLoader' );
+			//console.time( 'OBJLoader' ); //Hidden log
 
 			var state = new ParserState();
 
@@ -1349,7 +1349,7 @@ THREE.OBJLoader = ( function () {
 
 			}
 
-			console.timeEnd( 'OBJLoader' );
+			//console.timeEnd( 'OBJLoader' ); //Hidden log 
 
 			return container;
 

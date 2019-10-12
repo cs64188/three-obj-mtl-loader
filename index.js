@@ -941,7 +941,9 @@ THREE.OBJLoader = ( function () {
 			var scope = this;
 
 			var loader = new THREE.FileLoader( scope.manager );
-			loader.setPath( this.path );
+      loader.setPath( this.path );
+      if ( this.setCrossOrigin ) loader.setWithCredentials( this.crossOrigin );
+    
 			loader.load( url, function ( text ) {
 
 				onLoad( scope.parse( text ) );
@@ -964,7 +966,14 @@ THREE.OBJLoader = ( function () {
 
 			return this;
 
-		},
+    },
+    
+    setCrossOrigin: function ( value ) {
+
+      this.crossOrigin = value;
+      return this;
+  
+    },
 
 		parse: function ( text ) {
 

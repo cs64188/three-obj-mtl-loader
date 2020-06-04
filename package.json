@@ -8,7 +8,7 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "peerDependencies": {
-    "three": ">= 0.91"
+    "three": "^0.112.1"
   },
   "keywords": [
     "objloader",

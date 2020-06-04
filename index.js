@@ -466,6 +466,13 @@ THREE.MTLLoader.MaterialCreator.prototype = {
 					}
 
 					break;
+				
+				case 'alpha':
+					n = parseFloat( value );
+
+					params.alphaTest  = n;
+					
+					break;
 
 				case 'tr':
 					n = parseFloat( value );
@@ -968,7 +975,7 @@ THREE.OBJLoader = ( function () {
 
 		parse: function ( text ) {
 
-			console.time( 'OBJLoader' );
+			//console.time( 'OBJLoader' ); //Hidden log
 
 			var state = new ParserState();
 
@@ -1342,7 +1349,7 @@ THREE.OBJLoader = ( function () {
 
 			}
 
-			console.timeEnd( 'OBJLoader' );
+			//console.timeEnd( 'OBJLoader' ); //Hidden log 
 
 			return container;
 
